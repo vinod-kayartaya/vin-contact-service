@@ -4,6 +4,7 @@ import com.kvinod.model.Contact;
 import com.kvinod.model.ContactList;
 import com.kvinod.service.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -49,8 +50,12 @@ public class ContactController {
     }
 
     @GetMapping(path = "/{id}", produces = {"application/json", "application/xml"})
-    public Contact getById(@PathVariable String id) {
-        return service.getContactById(id);
+    public ResponseEntity<Object> getById(@PathVariable String id) {
+        Contact c = service.getContactById(id);
+        if(c==null){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No data found for id - " + id);
+        }
+        return ResponseEntity.ok(c);
     }
 
 

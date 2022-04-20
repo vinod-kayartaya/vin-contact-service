@@ -1,61 +1,61 @@
 GET /api/contacts/8ddb7fcf-0a7a-4eeb-a78f-13238ed85a77
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/json
 
 ###
 GET /api/contacts/8ddb7fcf-0a7a-4eeb-a78f-13238ed85a77
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 ###
 GET /api/contacts
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/json
 
 ###
 GET /api/contacts
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 
 ###
 GET /api/contacts/?gender=Female
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/json
 
 ###
 GET /api/contacts/?gender=Female
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 ###
 GET /api/contacts/?city=Atlanta
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/json
 
 ###
 GET /api/contacts/?city=Atlanta
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 ###
 GET /api/contacts/?state=Georgia
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/json
 
 ###
 GET /api/contacts/?state=Georgia
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 ###
 GET /api/contacts/?country=United+States
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/json
 
 ###
 GET /api/contacts/?country=United+States
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 
 ###
 POST /api/contacts
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 Content-Type: application/xml
 
@@ -76,7 +76,7 @@ Content-Type: application/xml
 
 ###
 POST /api/contacts
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/json
 Content-Type: application/json
 
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 ###
 POST /api/contacts
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/json
 Content-Type: application/json
 
@@ -115,7 +115,7 @@ Content-Type: application/json
 
 ###
 POST /api/contacts
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 Content-Type: application/xml
 
@@ -135,35 +135,35 @@ Content-Type: application/xml
 
 ###
 
-GET /api/contacts/db2ba7c1-d1ff-448e-a00f-5865d91cb371
-Host: localhost:8080
+GET /api/contacts/a39be565-7bf3-4821-aa96-e592a8e8963d
+Host: vin-contact-service.herokuapp.com
 Accept: application/json
 ###
 
-GET /api/contacts/db2ba7c1-d1ff-448e-a00f-5865d91cb371
-Host: localhost:8080
+GET /api/contacts/a39be565-7bf3-4821-aa96-e592a8e8963d
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 ###
 GET /api/contacts?email=roldakeru@scientificamerican.com
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 ###
-GET /api/contacts?email=roldakeru@scientificamerican.com
-Host: localhost:8080
+GET /api/contacts?email=shyam.sundar@example.com
+Host: vin-contact-service.herokuapp.com
 Accept: application/json
 
 ###
 GET /api/contacts?phone=4042662103
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 ###
 GET /api/contacts?phone=4042662103
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/json
 
 ###
-PUT /api/contacts/a6251462-a701-4051-a154-fa419c668057
-Host: localhost:8080
+PUT /api/contacts/a39be565-7bf3-4821-aa96-e592a8e8963d
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 Content-Type: application/xml
 
@@ -183,17 +183,12 @@ Content-Type: application/xml
 
 ###
 GET /api/contacts/a6251462-a701-4051-a154-fa419c668057
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 
 ###
 DELETE /api/contacts/84724a4b-7195-4a89-9589-ab538a235002
-Host: localhost:8080
+Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 
 
-###
-
-GET /api/contacts
-Host: ip172-18-0-104-c9g3nlk33d5g00eob2k0-8080.direct.labs.play-with-docker.com
-Accept: application/xml
