@@ -1,0 +1,199 @@
+GET /api/contacts/8ddb7fcf-0a7a-4eeb-a78f-13238ed85a77
+Host: localhost:8080
+Accept: application/json
+
+###
+GET /api/contacts/8ddb7fcf-0a7a-4eeb-a78f-13238ed85a77
+Host: localhost:8080
+Accept: application/xml
+###
+GET /api/contacts
+Host: localhost:8080
+Accept: application/json
+
+###
+GET /api/contacts
+Host: localhost:8080
+Accept: application/xml
+
+###
+GET /api/contacts/?gender=Female
+Host: localhost:8080
+Accept: application/json
+
+###
+GET /api/contacts/?gender=Female
+Host: localhost:8080
+Accept: application/xml
+###
+GET /api/contacts/?city=Atlanta
+Host: localhost:8080
+Accept: application/json
+
+###
+GET /api/contacts/?city=Atlanta
+Host: localhost:8080
+Accept: application/xml
+###
+GET /api/contacts/?state=Georgia
+Host: localhost:8080
+Accept: application/json
+
+###
+GET /api/contacts/?state=Georgia
+Host: localhost:8080
+Accept: application/xml
+###
+GET /api/contacts/?country=United+States
+Host: localhost:8080
+Accept: application/json
+
+###
+GET /api/contacts/?country=United+States
+Host: localhost:8080
+Accept: application/xml
+
+###
+POST /api/contacts
+Host: localhost:8080
+Accept: application/xml
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contact>
+  <id>8ddb7fcf-0a7a-4eeb-a78f-13238ed85a77</id>
+  <firstname>Esme</firstname>
+  <lastname>Filipyev</lastname>
+  <gender>Male</gender>
+  <email>efilipyev5c@rambler.ru</email>
+  <phone>4042662103</phone>
+  <address>9 Hermina Trail</address>
+  <city>Atlanta</city>
+  <state>Georgia</state>
+  <country>United States</country>
+  <pincode>31132</pincode>
+</contact>
+
+###
+POST /api/contacts
+Host: localhost:8080
+Accept: application/json
+Content-Type: application/json
+
+{
+    "id": "95c41e9e-9b7e-429d-ba4e-5e2e1a44044b",
+    "firstname": "Roy",
+    "lastname": "Oldaker",
+    "gender": "Male",
+    "email": "roldakeru@scientificamerican.com",
+    "phone": "5089917999",
+    "address": "842 Hauk Trail",
+    "city": "Worcester",
+    "state": "Massachusetts",
+    "country": "United States",
+    "pincode": "01654"
+}
+
+###
+POST /api/contacts
+Host: localhost:8080
+Accept: application/json
+Content-Type: application/json
+
+{
+    "firstname": "Vinod",
+    "lastname": "Kumar",
+    "gender": "Male",
+    "email": "vinod@vinod.co",
+    "phone": "9731424784",
+    "address": "TF-1 Elegant Elite, 1st crs, 1st mn, ISRO layout",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India",
+    "pincode": "560078"
+}
+
+###
+POST /api/contacts
+Host: localhost:8080
+Accept: application/xml
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contact>
+  <firstname>Shyam</firstname>
+  <lastname>Sundar</lastname>
+  <gender>Male</gender>
+  <email>shyam.sundar@xmpl.com</email>
+  <phone>9876587654</phone>
+  <address>SBI Layout</address>
+  <city>Bangalore</city>
+  <state>Karnataka</state>
+  <country>India</country>
+  <pincode>560098</pincode>
+</contact>
+
+###
+
+GET /api/contacts/db2ba7c1-d1ff-448e-a00f-5865d91cb371
+Host: localhost:8080
+Accept: application/json
+###
+
+GET /api/contacts/db2ba7c1-d1ff-448e-a00f-5865d91cb371
+Host: localhost:8080
+Accept: application/xml
+###
+GET /api/contacts?email=roldakeru@scientificamerican.com
+Host: localhost:8080
+Accept: application/xml
+###
+GET /api/contacts?email=roldakeru@scientificamerican.com
+Host: localhost:8080
+Accept: application/json
+
+###
+GET /api/contacts?phone=4042662103
+Host: localhost:8080
+Accept: application/xml
+###
+GET /api/contacts?phone=4042662103
+Host: localhost:8080
+Accept: application/json
+
+###
+PUT /api/contacts/a6251462-a701-4051-a154-fa419c668057
+Host: localhost:8080
+Accept: application/xml
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contact>
+  <firstname>Shyam</firstname>
+  <lastname>Sundar</lastname>
+  <gender>Male</gender>
+  <email>shyam.sundar@example.com</email>
+  <phone>9876587654</phone>
+  <address>SBI Layout, Konanakunte</address>
+  <city>Bangalore</city>
+  <state>Karnataka</state>
+  <country>India</country>
+  <pincode>560098</pincode>
+</contact>
+
+###
+GET /api/contacts/a6251462-a701-4051-a154-fa419c668057
+Host: localhost:8080
+Accept: application/xml
+
+###
+DELETE /api/contacts/84724a4b-7195-4a89-9589-ab538a235002
+Host: localhost:8080
+Accept: application/xml
+
+
+###
+
+GET /api/contacts
+Host: ip172-18-0-104-c9g3nlk33d5g00eob2k0-8080.direct.labs.play-with-docker.com
+Accept: application/xml
