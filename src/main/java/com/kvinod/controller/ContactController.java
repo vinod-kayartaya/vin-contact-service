@@ -61,15 +61,15 @@ public class ContactController {
 
     @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},
             produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
-    public Contact addNewContact(@RequestBody Contact contact) {
-        return service.addNewContact(contact);
+    public ResponseEntity<Object> addNewContact(@RequestBody Contact contact) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(service.addNewContact(contact));
     }
 
 
     @PostMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},
             consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE, MediaType.MULTIPART_FORM_DATA_VALUE})
-    public Contact addNewContactFromFormData(Contact contact) {
-        return service.addNewContact(contact);
+    public ResponseEntity<Object> addNewContactFromFormData(Contact contact) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(service.addNewContact(contact));
     }
 
     @PutMapping(path = "/{id}",
