@@ -4,6 +4,7 @@ import com.kvinod.model.Contact;
 import com.kvinod.model.ContactList;
 import com.kvinod.model.ErrorInfo;
 import com.kvinod.service.ContactService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequestMapping("/api/contacts")
 public class ContactController {
@@ -98,6 +100,8 @@ public class ContactController {
     public Contact patchContact(@PathVariable String id, @RequestBody Contact contact) {
         Contact oldContact = service.getContactById(id);
         contact.setId(id);
+
+        log.info("contact is {}", contact);
 
         if(contact.getFirstname()==null){
             contact.setFirstname(oldContact.getFirstname());
