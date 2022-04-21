@@ -40,10 +40,18 @@ public class ContactController {
             return ResponseEntity.ok(new ContactList(service.getContactsByGender(gender)));
         }
         if (!email.equals("")) {
-            return ResponseEntity.ok(service.getContactsByEmail(email));
+            Contact c = service.getContactsByEmail(email);
+            if(c==null){
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No data found for email " +email);
+            }
+            return ResponseEntity.ok(c);
         }
         if (!phone.equals("")) {
-            return ResponseEntity.ok(service.getContactsByPhone(phone));
+            Contact c = service.getContactsByEmail(phone);
+            if(c==null){
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No data found for phone " +phone);
+            }
+            return ResponseEntity.ok(c);
         }
 
         return ResponseEntity.ok(new ContactList(service.getAllContacts()));
