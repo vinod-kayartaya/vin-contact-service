@@ -78,6 +78,7 @@ public class ContactService {
         return contactList
                 .values()
                 .stream()
+                .filter(c -> c.getCity() != null)
                 .filter(c -> c.getCity().equalsIgnoreCase(city))
                 .collect(Collectors.toList());
     }
@@ -86,6 +87,7 @@ public class ContactService {
         return contactList
                 .values()
                 .stream()
+                .filter(c -> c.getState() != null)
                 .filter(c -> c.getState().equalsIgnoreCase(state))
                 .collect(Collectors.toList());
     }
@@ -94,6 +96,7 @@ public class ContactService {
         return contactList
                 .values()
                 .stream()
+                .filter(c -> c.getCountry() != null)
                 .filter(c -> c.getCountry().equalsIgnoreCase(country))
                 .collect(Collectors.toList());
     }
