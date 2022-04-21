@@ -15,12 +15,12 @@ public class ContactServiceApplication {
 
 	@GetMapping("/")
 	public String index(){
-		return "Hello, and welcome.\n" +
-				"\n" +
-				"You can access the contact service using the following link:\n" +
-				"\n" +
-				"https://vin-contact-service.herokuapp.com/api/contacts\n" +
-				"\n" +
+		return "Hello, and welcome.<br />" +
+				"<br />" +
+				"You can access the contact service using the following link:<br />" +
+				"<br />" +
+				"https://vin-contact-service.herokuapp.com/api/contacts<br />" +
+				"<br />" +
 				"You may also ask for either JSON or XML content.";
 	}
 
