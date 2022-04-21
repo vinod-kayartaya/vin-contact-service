@@ -19,7 +19,7 @@ public class ContactServiceApplication {
 				"<br />" +
 				"You can access the contact service using the following link:<br />" +
 				"<br />" +
-				"https://vin-contact-service.herokuapp.com/api/contacts<br />" +
+				"<a href='https://vin-contact-service.herokuapp.com/api/contacts'>https://vin-contact-service.herokuapp.com/api/contacts</a><br />" +
 				"<br />" +
 				"You may also ask for either JSON or XML content.";
 	}
