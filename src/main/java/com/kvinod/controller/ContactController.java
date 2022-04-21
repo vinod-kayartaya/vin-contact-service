@@ -2,6 +2,7 @@ package com.kvinod.controller;
 
 import com.kvinod.model.Contact;
 import com.kvinod.model.ContactList;
+import com.kvinod.model.ErrorInfo;
 import com.kvinod.service.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -42,14 +43,16 @@ public class ContactController {
         if (!email.equals("")) {
             Contact c = service.getContactsByEmail(email);
             if(c==null){
-                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No data found for email " +email);
+                ErrorInfo ei = new ErrorInfo("No data found for email " +email);
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ei);
             }
             return ResponseEntity.ok(c);
         }
         if (!phone.equals("")) {
             Contact c = service.getContactsByPhone(phone);
             if(c==null){
-                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No data found for phone " +phone);
+                ErrorInfo ei = new ErrorInfo("No data found for phone " +phone);
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ei);
             }
             return ResponseEntity.ok(c);
         }
