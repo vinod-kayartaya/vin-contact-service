@@ -99,34 +99,34 @@ public class ContactController {
         Contact oldContact = service.getContactById(id);
         contact.setId(id);
 
-        if(contact.getFirstname()!=null){
+        if(contact.getFirstname()==null){
             contact.setFirstname(oldContact.getFirstname());
         }
-        if(contact.getLastname()!=null){
+        if(contact.getLastname()==null){
             contact.setLastname(oldContact.getLastname());
         }
-        if(contact.getEmail()!=null){
+        if(contact.getEmail()==null){
             contact.setEmail(oldContact.getEmail());
         }
-        if(contact.getPhone()!=null){
+        if(contact.getPhone()==null){
             contact.setPhone(oldContact.getPhone());
         }
-        if(contact.getGender()!=null){
+        if(contact.getGender()==null){
             contact.setGender(oldContact.getGender());
         }
-        if(contact.getAddress()!=null){
+        if(contact.getAddress()==null){
             contact.setAddress(oldContact.getAddress());
         }
-        if(contact.getCity()!=null){
+        if(contact.getCity()==null){
             contact.setCity(oldContact.getCity());
         }
-        if(contact.getState()!=null){
+        if(contact.getState()==null){
             contact.setState(oldContact.getState());
         }
-        if(contact.getCountry()!=null){
+        if(contact.getCountry()==null){
             contact.setCountry(oldContact.getCountry());
         }
-        if(contact.getPincode()!=null){
+        if(contact.getPincode()==null){
             contact.setPincode(oldContact.getPincode());
         }
         return service.updateContact(contact);
