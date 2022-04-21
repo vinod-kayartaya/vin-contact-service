@@ -47,7 +47,7 @@ public class ContactController {
             return ResponseEntity.ok(c);
         }
         if (!phone.equals("")) {
-            Contact c = service.getContactsByEmail(phone);
+            Contact c = service.getContactsByPhone(phone);
             if(c==null){
                 return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No data found for phone " +phone);
             }
