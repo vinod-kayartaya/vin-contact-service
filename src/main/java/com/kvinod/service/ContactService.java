@@ -25,6 +25,7 @@ public class ContactService {
         if (contactList
                 .values()
                 .stream()
+                .filter(c -> c.getEmail() != null)
                 .filter(c -> c.getEmail().equalsIgnoreCase(contact.getEmail()))
                 .findFirst()
                 .isPresent()) {
@@ -33,6 +34,7 @@ public class ContactService {
         if (contactList
                 .values()
                 .stream()
+                .filter(c -> c.getPhone() != null)
                 .filter(c -> c.getPhone().equalsIgnoreCase(contact.getPhone()))
                 .findFirst()
                 .isPresent()) {
@@ -70,6 +72,7 @@ public class ContactService {
         return contactList
                 .values()
                 .stream()
+                .filter(c -> c.getGender() != null)
                 .filter(c -> c.getGender().equalsIgnoreCase(gender))
                 .collect(Collectors.toList());
     }
