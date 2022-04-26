@@ -11,6 +11,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Slf4j
@@ -28,8 +30,15 @@ public class ContactController {
             @RequestParam(required = false, defaultValue = "") String city,
             @RequestParam(required = false, defaultValue = "") String state,
             @RequestParam(required = false, defaultValue = "") String country,
-            @RequestParam(required = false, defaultValue = "") String gender
+            @RequestParam(required = false, defaultValue = "") String gender,
+            HttpServletResponse response
     ) {
+
+        Cookie cookie1 = new Cookie("Create-By", "Vinod Kumar");
+        Cookie cookie2 = new Cookie("Powered-By", "Spring boot");
+        response.addCookie(cookie1);
+        response.addCookie(cookie2);
+
         if (!city.equals("")) {
             return ResponseEntity.ok(new ContactList(service.getContactsByCity(city)));
         }
