@@ -34,8 +34,8 @@ public class ContactController {
             HttpServletResponse response
     ) {
 
-        Cookie cookie1 = new Cookie("Create-By", "Vinod Kumar");
-        Cookie cookie2 = new Cookie("Powered-By", "Spring boot");
+        Cookie cookie1 = new Cookie("Create-By", "Vinod");
+        Cookie cookie2 = new Cookie("Powered-By", "Springboot");
         response.addCookie(cookie1);
         response.addCookie(cookie2);
 
