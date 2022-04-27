@@ -22,6 +22,15 @@ public class ContactService {
     }
 
     public Contact addNewContact(Contact contact) {
+        if(contact.getFirstname()==null || contact.getFirstname().trim().length()==0){
+            throw new ServiceException("Firstname is required but missing");
+        }
+        if(contact.getEmail()==null || contact.getEmail().trim().length()==0){
+            throw new ServiceException("Email is required but missing");
+        }
+        if(contact.getPhone()==null || contact.getPhone().trim().length()==0){
+            throw new ServiceException("Phone number is required but missing");
+        }
         if (contactList
                 .values()
                 .stream()
