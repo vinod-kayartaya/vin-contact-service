@@ -81,6 +81,16 @@ public class ContactController {
     }
 
 
+    @GetMapping(path = "/{id}", produces = {"text/plain"})
+    public ResponseEntity<Object> getByIdAsText(@PathVariable String id) {
+        Contact c = service.getContactById(id);
+        if(c==null){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No data found for id - " + id);
+        }
+        return ResponseEntity.ok(c.toString());
+    }
+
+
     @PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},
             produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
     public ResponseEntity<Object> addNewContact(@RequestBody Contact contact) {
