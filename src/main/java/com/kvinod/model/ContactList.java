@@ -1,6 +1,5 @@
 package com.kvinod.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -16,10 +15,10 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 public class ContactList {
-    @XmlElement(name="contacts")
+    @XmlElement(name = "contact")
     private ArrayList<Contact> contacts = new ArrayList<>();
 
-    public ContactList(List<Contact> contacts){
+    public ContactList(List<Contact> contacts) {
         this.contacts.addAll(contacts);
     }
 }
