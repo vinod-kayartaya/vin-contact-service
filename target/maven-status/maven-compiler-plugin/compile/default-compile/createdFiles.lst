@@ -1,0 +1,8 @@
+com/kvinod/model/Contact.class
+com/kvinod/service/ServiceException.class
+com/kvinod/service/ContactService.class
+com/kvinod/controller/ContactController.class
+com/kvinod/model/ContactList.class
+com/kvinod/ContactServiceApplication.class
+com/kvinod/controller/CustomExceptionHandler.class
+com/kvinod/model/ErrorInfo.class
