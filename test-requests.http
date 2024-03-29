@@ -1,61 +1,50 @@
-GET /api/contacts/8ddb7fcf-0a7a-4eeb-a78f-13238ed85a77
-Host: vin-contact-service.herokuapp.com
+@hostname = http://122.172.87.185:8080
+
+GET {{hostname}}/api/contacts/8ddb7fcf-0a7a-4eeb-a78f-13238ed85a77
 Accept: application/json
 
 ###
-GET /api/contacts/8ddb7fcf-0a7a-4eeb-a78f-13238ed85a77
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts/8ddb7fcf-0a7a-4eeb-a78f-13238ed85a77
 Accept: application/xml
 ###
-GET /api/contacts
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts
 Accept: application/json
 
 ###
-GET /api/contacts
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts
 Accept: application/xml
 
 ###
-GET /api/contacts/?gender=Female
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts/?gender=Female
 Accept: application/json
 
 ###
-GET /api/contacts/?gender=Female
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts/?gender=Female
 Accept: application/xml
 ###
-GET /api/contacts/?city=Atlanta
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts/?city=Atlanta
 Accept: application/json
 
 ###
-GET /api/contacts/?city=Atlanta
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts/?city=Atlanta
 Accept: application/xml
 ###
-GET /api/contacts/?state=Georgia
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts/?state=Georgia
 Accept: application/json
 
 ###
-GET /api/contacts/?state=Georgia
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts/?state=Georgia
 Accept: application/xml
 ###
-GET /api/contacts/?country=United+States
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts/?country=United+States
 Accept: application/json
 
 ###
-GET /api/contacts/?country=United+States
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts/?country=United+States
 Accept: application/xml
 
 ###
-POST /api/contacts
-Host: vin-contact-service.herokuapp.com
+POST {{hostname}}/api/contacts
 Accept: application/xml
 Content-Type: application/xml
 
@@ -75,8 +64,7 @@ Content-Type: application/xml
 </contact>
 
 ###
-POST /api/contacts
-Host: vin-contact-service.herokuapp.com
+POST {{hostname}}/api/contacts
 Accept: application/json
 Content-Type: application/json
 
@@ -95,8 +83,7 @@ Content-Type: application/json
 }
 
 ###
-POST /api/contacts
-Host: vin-contact-service.herokuapp.com
+POST {{hostname}}/api/contacts
 Accept: application/json
 Content-Type: application/json
 
@@ -114,8 +101,7 @@ Content-Type: application/json
 }
 
 ###
-POST /api/contacts
-Host: vin-contact-service.herokuapp.com
+POST {{hostname}}/api/contacts
 Accept: application/xml
 Content-Type: application/xml
 
@@ -135,35 +121,28 @@ Content-Type: application/xml
 
 ###
 
-GET /api/contacts/a39be565-7bf3-4821-aa96-e592a8e8963d
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts/a39be565-7bf3-4821-aa96-e592a8e8963d
 Accept: application/json
 ###
 
-GET /api/contacts/a39be565-7bf3-4821-aa96-e592a8e8963d
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts/a39be565-7bf3-4821-aa96-e592a8e8963d
 Accept: application/xml
 ###
-GET /api/contacts?email=roldakeru@scientificamerican.com
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts?email=roldakeru@scientificamerican.com
 Accept: application/xml
 ###
-GET /api/contacts?email=shyam.sundar@example.com
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts?email=shyam.sundar@example.com
 Accept: application/json
 
 ###
-GET /api/contacts?phone=4042662103
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts?phone=4042662103
 Accept: application/xml
 ###
-GET /api/contacts?phone=4042662103
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts?phone=4042662103
 Accept: application/json
 
 ###
-PUT /api/contacts/a39be565-7bf3-4821-aa96-e592a8e8963d
-Host: vin-contact-service.herokuapp.com
+PUT {{hostname}}/api/contacts/a39be565-7bf3-4821-aa96-e592a8e8963d
 Accept: application/xml
 Content-Type: application/xml
 
@@ -182,13 +161,11 @@ Content-Type: application/xml
 </contact>
 
 ###
-GET /api/contacts/a6251462-a701-4051-a154-fa419c668057
-Host: vin-contact-service.herokuapp.com
+GET {{hostname}}/api/contacts/a6251462-a701-4051-a154-fa419c668057
 Accept: application/xml
 
 ###
-DELETE /api/contacts/84724a4b-7195-4a89-9589-ab538a235002
-Host: vin-contact-service.herokuapp.com
+DELETE {{hostname}}/api/contacts/84724a4b-7195-4a89-9589-ab538a235002
 Accept: application/xml
 
 
